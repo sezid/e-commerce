@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Bauer Bodoni Condensed';
+    src: url('/path-to-your-font/BauerBodoniCondensed.woff2') format('woff2'),
+         url('/path-to-your-font/BauerBodoniCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,3 +14,5 @@
 a.active hr{
     display: block;
 }
+
+
