@@ -7,12 +7,13 @@ const ShopContextProvider=(props)=>{
     
     const currency="৳";
     const delievery_fee="50";
+    const exchangeRate=120;
 
     
     
     
     const value={
-        products, currency, delievery_fee
+        products, currency, delievery_fee, exchangeRate
     }
 
     return (
