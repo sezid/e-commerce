@@ -7,7 +7,7 @@ const ShopContextProvider=(props)=>{
     
     const currency="৳";
     const delievery_fee="50";
-    const exchangeRate=120;
+    const exchangeRate=80;
 
     
     
