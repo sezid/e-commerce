@@ -10,14 +10,14 @@ const Login = () => {
   return (
     <form onSubmit={onSubmitHandler} className='flex flex-col items-center w-[90%] sm:max-w-96 m-auto mt-14 gap-4 text-gray-800'> 
       <div className='inline-flex  items-center gap-2 mb-2 mt-10'>
-          <p className='prata-regular text-3xl'>{currentState}</p>
-          <hr className='border-none h-[1.5px] w-8 bg-gray-800'/>
+          <p className='prata-regular text-3xl dark:text-white'>{currentState}</p>
+          <hr className='border-none h-[1.5px] w-8 bg-gray-800 dark:bg-white'/>
       </div>
-      {currentState==='Login'?'':<input type="text" className='w-full px-3 py-2 border border-gray-800' placeholder='Name' required/>}
-      <input type="email" className='w-full px-3 py-2 border border-gray-800' placeholder='Email' required/>
-      <input type="password" className='w-full px-3 py-2 border border-gray-800' placeholder='Password' required/>
+      {currentState==='Login'?'':<input type="text" className='dark:bg-gray-500 dark:border dark:border-white dark:text-white w-full px-3 py-2 border border-gray-800' placeholder='Name' required/>}
+      <input type="email" className='dark:bg-gray-500 dark:border dark:border-white dark:text-white w-full px-3 py-2 border border-gray-800' placeholder='Email' required/>
+      <input type="password" className='dark:bg-gray-500 dark:border dark:border-white dark:text-white w-full px-3 py-2 border border-gray-800' placeholder='Password' required/>
       <div className='w-full flex flex-col justify-between text-sm mt-[8px]'>
-        {currentState==='Login'?'':<p>Already Have an Account? <span onClick={()=>setCurrentState('Login')} className='cursor-pointer text-gray-800'>Click Here</span></p>}
+        {currentState==='Login'?'':<p className='dark:text-white'>Already Have an Account? <span onClick={()=>setCurrentState('Login')} className='cursor-pointer text-gray-800 dark:text-white'>Click Here</span></p>}
         {
           currentState==='Login'
           ? <p onClick={()=>setCurrentState('Sign Up')} className='cursor-pointer'>New User? <span onClick={()=>setCurrentState('Login')} className='cursor-pointer text-gray-800'>Click Here</span></p>

@@ -82,7 +82,7 @@ const Collection = () => {
       <div className="min-w-60">
         <p
           onClick={() => setShowFilter(!showFilter)}
-          className="my-2 text-xl flex items-center cursor-pointer gap-2"
+          className="my-2 text-xl flex items-center cursor-pointer gap-2 dark:text-white"
         >
           FILTERS
           <img
@@ -97,8 +97,8 @@ const Collection = () => {
             showFilter ? "" : "hidden"
           } sm:block`}
         >
-          <p className="mb-3 text-sm font-medium">CATEGORIES</p>
-          <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
+          <p className="mb-3 text-sm font-medium dark:text-white">CATEGORIES</p>
+          <div className="flex flex-col gap-2 text-sm font-light text-gray-700 dark:text-white">
             <p className="flex gap-2">
               <input
                 className="w-3"
@@ -134,8 +134,8 @@ const Collection = () => {
             showFilter ? "" : "hidden"
           } sm:block`}
         >
-          <p className="mb-3 text-sm font-medium">TYPE</p>
-          <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
+          <p className="mb-3 text-sm font-medium dark:text-white">TYPE</p>
+          <div className="flex flex-col gap-2 text-sm font-light text-gray-700 dark:text-white">
             <p className="flex gap-2">
               <input
                 className="w-3"

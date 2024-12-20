@@ -81,10 +81,35 @@ const ShopContextProvider=(props)=>{
         }
         return totalAmount;
     }
+
+
+
+    const [darkMode, setDarkMode] = useState(() => {
+        // Check local storage for saved theme preference
+        return localStorage.getItem("theme") === "dark";
+      });
+    
+      useEffect(() => {
+        // Apply the dark mode class to the root element
+        if (darkMode) {
+          document.documentElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        }
+      }, [darkMode]);
+    
+      const toggleDarkMode = () => setDarkMode((prev) => !prev);
     
     const value={
-        products, currency, delivery_fee, exchangeRate, search, setSearch, showSearch, setShowSearch, cartItems, addToCart,getCartCount,updateQuantity,getCartAmount,navigate
+        products, currency, delivery_fee, exchangeRate, search, setSearch, showSearch, setShowSearch, cartItems, addToCart,getCartCount,updateQuantity,getCartAmount,navigate, darkMode, toggleDarkMode
     }
+
+
+
+    
+    
 
     return (
         <ShopContext.Provider value={value}>

@@ -76,7 +76,14 @@ import cross_icon from './cross_icon.png'
 import nagad from './nagad.svg'
 import bkash from './bkash.svg'
 import credit from './credit-card.png'
-
+import sun from './sun.png'
+import moon from './moon.png'
+import profile_icon_dark from './profile_icon_dark.png'
+import cart_icon_dark from './cart_icon_dark.png'
+import search_icon_dark from './search_icon_dark.png'
+import support_img_dark from './support_img_dark.png'
+import quality_icon_dark from './quality_icon_dark.png'
+import exchange_icon_dark from './exchange_icon_dark.png'
 
 
 
@@ -101,7 +108,15 @@ export const assets = {
     cross_icon,
     nagad,
     bkash,
-    credit
+    credit,
+    sun,
+    moon,
+    search_icon_dark,
+    profile_icon_dark,
+    cart_icon_dark,
+    exchange_icon_dark,
+    support_img_dark,
+    quality_icon_dark
 }
 
 export const products = [
