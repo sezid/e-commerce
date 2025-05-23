@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
+
+# Coverage directory (from tools like Jest)
+coverage/
+
+# Optional: database files
+*.sqlite
+*.db
+
+# Optional: system file backups
+*.swp
+*.swo
+*.bak
+
+# Optional: ignore uploads/temp folders if used
+uploads/
+temp/
